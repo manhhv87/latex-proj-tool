@@ -20,14 +20,14 @@ this post: http://dropbearcode.blogspot.com/2011/09/multiple-file-latex-diff.htm
    - Download latexdiff from https://ctan.org/pkg/latexdiff?lang=en 
    - Unzip the latexdiff files and copy them to a C:\Strawberry\perl\bin\latexdiff folder.
 2.	Install Latex Project Managment Tool
-	git clone https://github.com/manhhv87/latex-proj-tool.git 
-	pip3 install latex_proj_tool
+   - git clone https://github.com/manhhv87/latex-proj-tool.git 
+   - pip3 install latex_proj_tool
 3.	Project flatten
-	python3 -m latex_proj_tool flat old_project/main.tex --output old.tex
-	python3 -m latex_proj_tool flat new_project/main.tex --output new.tex
+   - python3 -m latex_proj_tool flat old_project/main.tex --output old.tex
+   - python3 -m latex_proj_tool flat new_project/main.tex --output new.tex
 4.	Create diff.tex
-	cd C:\Strawberry\perl\bin\latexdiff 
-	perl latexdiff old.tex new.tex > diff.tex
+   - cd C:\Strawberry\perl\bin\latexdiff 
+   - perl latexdiff old.tex new.tex > diff.tex
 5.	Upload to Overleaf and Compile diff.tex to get the PDF
 
 
